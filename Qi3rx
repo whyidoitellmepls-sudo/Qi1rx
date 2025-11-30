@@ -73,6 +73,8 @@ ReplicatedStorage.ChildAdded:Connect(function(child)
 end)
 
 local MainTab = window:AddTab("Main")
+local KillingTab = window:AddTab("Killing")
+local FarmingTab = window:AddTab("Fast Farm")
 
 infoTab:AddLabel("Made by Henne ♥️").TextSize = 20
 
@@ -310,8 +312,6 @@ end)
 timeDropdown:Add("Night")
 timeDropdown:Add("Day")
 timeDropdown:Add("Midnight")
-
-local KillingTab = window:AddTab("Killing")
 
 local function checkCharacter()
     if not game.Players.LocalPlayer.Character then
@@ -1010,8 +1010,6 @@ task.spawn(function()
         task.wait(0.2)
     end
 end)
-
-local FarmingTab = window:AddTab("Fast Farm")
 
 local strengthStat = leaderstats:WaitForChild("Strength")
 local durabilityStat = player:WaitForChild("Durability")
